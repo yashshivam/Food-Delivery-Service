@@ -1,0 +1,259 @@
+/*css reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Varibles */
+
+:root {
+    --navbar-height: 59px;
+}
+
+/* navigation bar */
+
+#navbar {
+    position: relative;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+
+#navbar::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* navigation bar: Logo and image */
+#logo {
+    margin: 34px 45px;
+}
+
+#logo img {
+    height: 56px;
+    margin: 34px 45px;
+
+}
+
+/* navigation bar: List item styling */
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.3em;
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bolder;
+
+}
+
+#navbar ul li a {
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+
+}
+
+#navbar ul li a:hover {
+    color: white;
+    background-color: black;
+
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 581px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background-image: url('../Background.jpg');
+    height: 116%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    background-size: cover;
+    top: 0px;
+    left: 0px;
+}
+
+
+#home h1 {
+    text-align: center;
+    color: black;
+    font-family: "Bree Serif", serif;   
+}
+
+#home p {
+    text-align: center;
+    font-family: "Bree Serif", serif;
+    font-size: 1.8em;
+    color: black;
+}
+
+/* Servies Section  */
+
+#servies {
+    margin: 34px;
+    display: flex;
+}
+
+#servies .box {
+    margin: 25px 6px;
+    border: 2px solid brown;
+    padding: 34px;
+    border-radius: 29px;
+    background-color: #f3f0f0;
+    margin-bottom: 20px;
+}
+
+#servies .box img {
+    height: 160px;
+    margin: auto;
+    display: block;
+    padding: 34px;
+}
+
+#servies .box p {
+    font-family: "Comic Sans MS", cursive;
+}
+
+/* Client Section  */
+
+#client-section {
+    height: 344px;
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../pexels-meli-di-rocco-879201.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background-size: cover;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#clients img {
+    height: 124px;
+}
+
+/* contact section */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../pexels-anastasia-ilinamakarova-11566309.jpg') no-repeat center center/cover;
+
+}
+
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+#contact-box form {
+    width: 40%;
+
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: "Comic Sans MS", cursive;
+
+}
+
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility classes*/
+
+.h-primary {
+    font-size: 3.8em;
+    font-family: "Comic Sans MS", cursive;
+    font-weight: bolder;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 2.3em;
+    font-family: "Comic Sans MS", cursive;
+    padding: 12px;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
